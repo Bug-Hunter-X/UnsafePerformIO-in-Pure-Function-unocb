@@ -1,0 +1,1 @@
+This Haskell code attempts to perform an unsafe operation by using `unsafePerformIO` to access a mutable variable within a pure function. This can lead to unexpected behavior and break referential transparency, a fundamental principle of Haskell.  The `unsafePerformIO` function bypasses Haskell's safety mechanisms, making it prone to errors and difficult to reason about.
