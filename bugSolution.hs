@@ -1,0 +1,3 @@
+The solution is to avoid using `unsafePerformIO` entirely.  Instead, restructure the code to handle the mutable state using monads like `IO` or `ST` which are designed to manage side effects. In this example, we refactor to use the `IO` monad to encapsulate the mutable variable's operations.
+
+This refactoring maintains Haskell's purity and avoids the dangers associated with `unsafePerformIO`. The behavior now becomes predictable and easier to reason about.
